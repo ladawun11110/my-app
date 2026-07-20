@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('index');
@@ -59,3 +60,6 @@ Route::get('/blog', function () {
     return view('blog',compact('blog')); 
 })->name('blog');
 
+Route::get('/form', [AdminController::class, 'form'])->name('form');
+
+Route::post('/insert', [AdminController::class , 'insert']);

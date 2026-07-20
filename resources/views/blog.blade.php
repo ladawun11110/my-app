@@ -56,7 +56,9 @@
         <p class="text-muted">แบ่งปันความรู้ ประสบการณ์ และเรื่องราวดี ๆ สำหรับนักพัฒนา</p>
         <hr class="mx-auto" style="max-width: 100px; height: 3px; background: var(--primary-gradient); border: none; border-radius: 5px; opacity: 1;">
     </div>
-
+<div class="text-end">
+    <a href="{{ route('form') }}" class="btn btn-primary mb-4">+ เขียนบทความใหม่</a>    
+</div>
     <div class="row g-4">
         @foreach ($blog as $item)
             <div class="col-md-6">
